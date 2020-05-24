@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://mikasa1110.github.io/"/>
-  <updated>2020-05-23T03:41:28.280Z</updated>
+  <updated>2020-05-24T02:00:08.140Z</updated>
   <id>https://mikasa1110.github.io/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>记录搭建</title>
+    <link href="https://mikasa1110.github.io/2020/05/24/ji-lu-da-jian/"/>
+    <id>https://mikasa1110.github.io/2020/05/24/ji-lu-da-jian/</id>
+    <published>2020-05-24T00:39:41.000Z</published>
+    <updated>2020-05-24T02:00:08.140Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="第一次搭建"><a href="#第一次搭建" class="headerlink" title="第一次搭建"></a>第一次搭建</h1><h2 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h2><ul><li>第一个原因就是想记录一下自己平时学习遇到的问题，因为想转专业，就注册了洛谷的账号做题，有时候做完题看到题解就会感叹别人方法的巧妙，想要记录这些巧妙的处理方法。</li><li>第二就是整理一些科目的题目的处理方法留作考试前复习用。</li></ul><h2 id="过程"><a href="#过程" class="headerlink" title="过程"></a>过程</h2><ul><li>主要就是参照了b站上面的教程</li><li>搭建的时候遇到了一些困难，主要参照了csdn上面的教程<h2 id="关于以后"><a href="#关于以后" class="headerlink" title="关于以后"></a>关于以后</h2></li><li>希望自己能够坚持写下去吧，希望能转专业，希望以后能把网站优化，美化的更好。（老希望工程了）<h2 id="超链接"><a href="#超链接" class="headerlink" title="超链接"></a>超链接</h2><a href="https://blog.csdn.net/victoryxa/article/details/103733655" target="_blank" rel="noopener">CSDN</a><br><a href="https://www.bilibili.com/video/BV1je41147Ma?p=8" target="_blank" rel="noopener">b站</a></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;第一次搭建&quot;&gt;&lt;a href=&quot;#第一次搭建&quot; class=&quot;headerlink&quot; title=&quot;第一次搭建&quot;&gt;&lt;/a&gt;第一次搭建&lt;/h1&gt;&lt;h2 id=&quot;原因&quot;&gt;&lt;a href=&quot;#原因&quot; class=&quot;headerlink&quot; title=&quot;原因&quot;&gt;&lt;/a&gt;原
+      
+    
+    </summary>
+    
+    
+    
+      <category term="记录" scheme="https://mikasa1110.github.io/tags/%E8%AE%B0%E5%BD%95/"/>
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
