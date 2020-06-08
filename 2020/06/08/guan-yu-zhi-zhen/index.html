@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="c语言实验课, mikasa">
+    <meta name="keywords" content="关于指针, mikasa">
     <meta name="description" content="I dreamed to enter a fanciful gate.Then encounter my dear soulmate.Bearing the weight.Embracing fate.Defying hate.">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>c语言实验课 | mikasa</title>
+    <title>关于指针 | mikasa</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -287,12 +287,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/14.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/20.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">c语言实验课</h1>
+                    <h1 class="description center-align post-title">关于指针</h1>
                 </div>
             </div>
         </div>
@@ -407,13 +407,9 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                    <div class="article-tag">
-                        
-                            <a href="/tags/c%E8%AF%AD%E8%A8%80/">
-                                <span class="chip bg-color">c语言</span>
-                            </a>
-                        
-                    </div>
+                          <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                          </div>
                     
                 </div>
                 <div class="col s5 right-align">
@@ -425,7 +421,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-05-24
+                    2020-06-08
                 </div>
                 
 
@@ -441,18 +437,22 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="c语言实验课"><a href="#c语言实验课" class="headerlink" title="c语言实验课"></a>c语言实验课</h1><h2 id="第一次实验"><a href="#第一次实验" class="headerlink" title="第一次实验"></a>第一次实验</h2><ul>
-<li>描述：<br>假设收银员的抽屉里有用不完的四种硬币：25¢，10¢，5¢和1¢，他需要找给客户找零。如何决定将哪些硬币交给顾客呢？要求硬币数量最少。</li>
-<li>第一种写法int a=0,b=0,c=0,d=0;<br>while(sum&gt;0){<br>  if( sum &gt;= 25 ){<pre><code>sum-=25;
-d++;
-continue;</code></pre>  }<br>  if( sum &gt;= 10 ){<pre><code>sum-=10;
-c++;
-continue;</code></pre>  }<br>  if( sum &gt;= 5 ){<pre><code>sum-=5;
-b++;
-continue;</code></pre>  }<br>  if( sum &gt;= 1 ){<pre><code>sum-=1;
-a++;</code></pre>  }<br>}<br>printf(“%d”,a+b+c+d);<br>这很容易就能理解但是运用减法，还写了好几个循环。</li>
-<li>第二个方法<br>int ti = 0, ti1 = 0, ti2 = 0, ti3 = 0;<br>ti=total/25;<br>total=total%25;<br>ti1=total/10;<br>total=total%10;<br>ti2=total/5;<br>total=total%5;<br>ti3=total;<br>printf(“%d”,ti+ti1+ti2+ti3);</li>
+                <h1 id="关于指针"><a href="#关于指针" class="headerlink" title="关于指针"></a>关于指针</h1><ul>
+<li>&amp;是取地址符，表示&amp;a就表示a在内存中存放的地址</li>
+<li>*是解引符</li>
+<li>eg： int i=3；<br><br>&emsp;&emsp;      int *p；<br>&emsp;&emsp;<br>p=&i;<br><br>这样就把i的地址放到了p中，通过解引符 *p我们就能得到存的值。比如可以printf *p 这样就得到了3.</li>
+<li>例如swap函数，如果我们只是在函数中交换，在main函数中却没法实现交换。但如果使用指针就可以。<br><br>eg:swap(int <em>p，int *q) 然后int t；t=</em>q；这样整就行了，主函数里面用swap（&amp;i，&amp;j）这样的就实现了交换。<h2 id="数组指针和数组指针"><a href="#数组指针和数组指针" class="headerlink" title="数组指针和数组指针"></a>数组指针和数组指针</h2></li>
+<li>指针数组：首先它是一个数组，数组的元素都是指针，数组占多少个字节由数组本身的大小决定，每一个元素都是一个指针，在32 位系统下任何类型的指针永远是占4 个字节。它是“储存指针的数组”的简称。<br>数组指针：首先它是一个指针，它指向一个数组。在32 位系统下任何类型的指针永远是占4 个字节，至于它指向的数组占多少字节，不知道，具体要看数组大小。它是“指向数组的指针”的简称。</li>
 </ul>
+<p>下面到底哪个是数组指针，哪个是指针数组呢：<br>A)<br>int <em>p1[10];<br>B)<br>int (</em>p2)[10];<br>每次上课问这个问题，总有弄不清楚的。这里需要明白一个符号之间的优先级问题。</p>
+<p>“[]”的优先级比“<em>”要高。p1 先与“[]”结合，构成一个数组的定义，数组名为p1，int *修饰的是数组的内容，即数组的每个元素。那现在我们清楚，这是一个数组，其包含10 个指向int 类型数据的指针，即指针数组。至于p2 就更好理解了，在这里“（）”的优先级比“[]”高，“</em>”号和p2 构成一个指针的定义，指针变量名为p2，int 修饰的是数组的内容，即数组的每个元素。数组在这里并没有名字，是个匿名数组。那现在我们清楚p2 是一个指针，它指向一个包含10 个int 类型数据的数组，即数组指针。我们可以借助下面的图加深理解：<br><img src="D:/BLOG/source/images/shuzu.jpg" alt="图示"><br><br></p>
+<ul>
+<li><p>eg:首先，定义一个数组[5], 将这个数组取个名字叫做a，a[5]；那么这个数组所存的变量类型是char *， 所以就有了char * a[5];—-定义一个能够存放5个指向为char的指针变量的数组。（有点拗口）。这里面的5个元素，取出任意一个都是一个char *的指针。</p>
+<p>首先他是一个指针，定义一个指针 （<em>）， 并将这个指针取名为p（</em>p）；这个指针是指向一个存有5个char类型元素的数组的char [5], 所以 char (*p)[5]；主要这里，一定有小括号，原因是因为符号结合优先级的问题。</p>
+</li>
+</ul>
+<p>说到这里，我们来看一哈二维数组a[3][5]；如果 p = a；那么可以完成2.0一样的元素访问。对于二维数组，我不知道老师是怎么给你们说的哈，在这里二维数组可以看作为多个一维数组组合成的。当然也有人说，没有多维的数组，我们在这里不讨论这个问题。 对于char a[3][5]，我们还是翻译一下：定义一个能够存放三个元素的数组a，a[3]，这三个数组的类型是一个能够存放5个char类型元素的数组char [5], char a[3][5]，也很拗口，但是慢点读，多读两遍，（如果把数组当作指针看）能否发现有那种指向指针的味道（二重指针的味道）。所以从这儿也可以看到数组指针与二维数组的相识性，和二重指针的相似性（不过还是那句话，是当作，不是就是）。<br>*首先说定义一个数组a[5]; 老师给我们说过，数组的标识符a，代表了这个数组的首地址。既然是地址，那我们开看看其与指针的关系。</p>
+<p>int a[5] = { …}; int <em>p = a;<br>a利用数组的方式访问元素：a[1] = 5;   a[2] = a[3];     int i = a[4];<br>a利用指针的方式访问元素：</em>(a+1) = 5; <em>(a+2) = *(a+3); int i = *(a+4);<br>p利用数组的方式访问元素：p[1] = 5;   p[2] = p[3];     int i = p[4];<br>p利用指针的方式访问元素：</em>(p+1) = 5; *(p+2) = *(a+3); int i = *(p+4);<br>就上面的几个表达式可以看出，如果一个指针指向一个数组，那么这个指针变量和这个数组名可以几乎看作一个东西来使用（看作：意思你可以用一个东西去这么理解，但是你不能认为他们就是一个东西）。区别主要在于a不可以更改指向（a++：非法，p++合法）；</p>
 
             </div>
             <hr/>
@@ -478,7 +478,7 @@ a++;</code></pre>  }<br>}<br>printf(“%d”,a+b+c+d);<br>这很容易就能理�
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://mikasa1110.github.io/2020/05/24/c-yu-yan-shi-yan-ke/">https://mikasa1110.github.io/2020/05/24/c-yu-yan-shi-yan-ke/</a>
+                    <a href="https://mikasa1110.github.io/2020/06/08/guan-yu-zhi-zhen/">https://mikasa1110.github.io/2020/06/08/guan-yu-zhi-zhen/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -515,11 +515,7 @@ a++;</code></pre>  }<br>}<br>printf(“%d”,a+b+c+d);<br>这很容易就能理�
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            
-                                <a href="/tags/c%E8%AF%AD%E8%A8%80/">
-                                    <span class="chip bg-color">c语言</span>
-                                </a>
-                            
+                            <span class="chip bg-color">无标签</span>
                         </div>
                     
                 </div>
@@ -685,9 +681,10 @@ a++;</code></pre>  }<br>}<br>printf(“%d”,a+b+c+d);<br>这很容易就能理�
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2020/06/08/guan-yu-zhi-zhen/">
                     <div class="card-image">
@@ -708,9 +705,9 @@ eg： int i=3；&emsp;&emsp;      int *p；&emsp;&emsp;p=&i;这样就把i的地�
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-06-08
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-06-08
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -719,6 +716,7 @@ eg： int i=3；&emsp;&emsp;      int *p；&emsp;&emsp;p=&i;这样就把i的地�
                         </span>
                     </div>
                 </div>
+
                 
             </div>
         </div>
@@ -729,24 +727,21 @@ eg： int i=3；&emsp;&emsp;      int *p；&emsp;&emsp;p=&i;这样就把i的地�
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/05/24/ji-lu-da-jian/">
+                <a href="/2020/05/24/c-yu-yan-shi-yan-ke/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="记录搭建">
+                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="c语言实验课">
                         
-                        <span class="card-title">记录搭建</span>
+                        <span class="card-title">c语言实验课</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            第一次搭建原因
-第一个原因就是想记录一下自己平时学习遇到的问题，因为想转专业，就注册了洛谷的账号做题，有时候做完题看到题解就会感叹别人方法的巧妙，想要记录这些巧妙的处理方法。
-第二就是整理一些科目的题目的处理方法留作考试前复习用。
-
-过程
-
+                            c语言实验课第一次实验
+描述：假设收银员的抽屉里有用不完的四种硬币：25¢，10¢，5¢和1¢，他需要找给客户找零。如何决定将哪些硬币交给顾客呢？要求硬币数量最少。
+第一种写法int a=0,b=0,c=0,d=0;while(sum&gt
                         
                     </div>
                     <div class="publish-info">
@@ -764,8 +759,8 @@ eg： int i=3；&emsp;&emsp;      int *p；&emsp;&emsp;p=&i;这样就把i的地�
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E8%AE%B0%E5%BD%95/">
-                        <span class="chip bg-color">记录</span>
+                    <a href="/tags/c%E8%AF%AD%E8%A8%80/">
+                        <span class="chip bg-color">c语言</span>
                     </a>
                     
                 </div>
