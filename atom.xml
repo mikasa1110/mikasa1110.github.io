@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://mikasa1110.github.io/"/>
-  <updated>2020-06-08T14:46:12.912Z</updated>
+  <updated>2020-06-13T09:33:00.405Z</updated>
   <id>https://mikasa1110.github.io/</id>
   
   <author>
@@ -17,13 +17,37 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>??</title>
+    <link href="https://mikasa1110.github.io/2020/06/13/gong-shu/"/>
+    <id>https://mikasa1110.github.io/2020/06/13/gong-shu/</id>
+    <published>2020-06-13T08:56:53.000Z</published>
+    <updated>2020-06-13T09:33:00.405Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id=""><a href="#" class="headerlink" title="??"></a>??</h1><h2 id="-1"><a href="#-1" class="headerlink" title="????"></a>????</h2><h3 id="-2"><a href="#-2" class="headerlink" title="??????????"></a>??????????</h3><h3 id="-3"><a href="#-3" class="headerlink" title="???????"></a>???????</h3><p>$$y^{\prime}+P(x) y=Q(x)$$<br>$$y=e^{-\int P(x) \mathrm{d} x}\left(\int Q(x) e^{\int P(x) \mathrm{d} x} \mathrm{d} x+C\right)$$</p><h3 id="n"><a href="#n" class="headerlink" title="n?????????????"></a>n?????????????</h3><h2 id="-4"><a href="#-4" class="headerlink" title="???????"></a>???????</h2><h3 id="-5"><a href="#-5" class="headerlink" title="?????????"></a>?????????</h3><h3 id="-6"><a href="#-6" class="headerlink" title="???????"></a>???????</h3><h3 id="-7"><a href="#-7" class="headerlink" title="??(????)"></a>??(????)</h3><h3 id="-8"><a href="#-8" class="headerlink" title="????????"></a>????????</h3><h2 id="-9"><a href="#-9" class="headerlink" title="??"></a>??</h2><h3 id="-10"><a href="#-10" class="headerlink" title="????"></a>????</h3><h3 id="-11"><a href="#-11" class="headerlink" title="?????"></a>?????</h3><p>$a_{k}=\frac{1}{\pi} \int_{-\pi}^{\pi} f(x) \cos k x \mathrm{d} x, k=0,1,2, \cdots$ <br>$b_{k}=\frac{1}{\pi} \int_{-\pi}^{\pi} f(x) \sin k x \mathrm{d} x, k=1,2, \cdots$</p><h3 id="-12"><a href="#-12" class="headerlink" title="???"></a>???</h3><h3 id="-13"><a href="#-13" class="headerlink" title="????"></a>????</h3><h2 id="-14"><a href="#-14" class="headerlink" title="???"></a>???</h2><h3 id="-15"><a href="#-15" class="headerlink" title="????"></a>????</h3><h3 id="-16"><a href="#-16" class="headerlink" title="????????????"></a>????????????</h3><h2 id="-17"><a href="#-17" class="headerlink" title="????"></a>????</h2><h3 id="-18"><a href="#-18" class="headerlink" title="??????????"></a>??????????</h3><h3 id="-19"><a href="#-19" class="headerlink" title="?????????"></a>?????????</h3><h2 id="-20"><a href="#-20" class="headerlink" title="????"></a>????</h2><h3 id="-21"><a href="#-21" class="headerlink" title="???"></a>???</h3><h3 id="-22"><a href="#-22" class="headerlink" title="??????????????"></a>??????????????</h3>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;headerlink&quot; title=&quot;??&quot;&gt;&lt;/a&gt;??&lt;/h1&gt;&lt;h2 id=&quot;-1&quot;&gt;&lt;a href=&quot;#-1&quot; class=&quot;headerlink&quot; title=&quot;????&quot;&gt;&lt;/a&gt;????&lt;/h2&gt;&lt;h3 id
+      
+    
+    </summary>
+    
+    
+    
+      <category term="????" scheme="https://mikasa1110.github.io/tags//"/>
+    
+  </entry>
+  
+  <entry>
     <title>关于指针</title>
     <link href="https://mikasa1110.github.io/2020/06/08/guan-yu-zhi-zhen/"/>
     <id>https://mikasa1110.github.io/2020/06/08/guan-yu-zhi-zhen/</id>
     <published>2020-06-08T03:42:06.000Z</published>
-    <updated>2020-06-08T14:46:12.912Z</updated>
+    <updated>2020-06-13T02:01:36.783Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="关于指针"><a href="#关于指针" class="headerlink" title="关于指针"></a>关于指针</h1><ul><li>&amp;是取地址符，表示&amp;a就表示a在内存中存放的地址</li><li>*是解引符</li><li>eg： int i=3；<br><br>&emsp;&emsp;      int *p；<br>&emsp;&emsp;<br>p=&i;<br><br>这样就把i的地址放到了p中，通过解引符 *p我们就能得到存的值。比如可以printf *p 这样就得到了3.</li><li>例如swap函数，如果我们只是在函数中交换，在main函数中却没法实现交换。但如果使用指针就可以。<br><br>eg:swap(int <em>p，int *q) 然后int t；t=</em>q；这样整就行了，主函数里面用swap（&amp;i，&amp;j）这样的就实现了交换。<h2 id="数组指针和数组指针"><a href="#数组指针和数组指针" class="headerlink" title="数组指针和数组指针"></a>数组指针和数组指针</h2></li><li>指针数组：首先它是一个数组，数组的元素都是指针，数组占多少个字节由数组本身的大小决定，每一个元素都是一个指针，在32 位系统下任何类型的指针永远是占4 个字节。它是“储存指针的数组”的简称。<br>数组指针：首先它是一个指针，它指向一个数组。在32 位系统下任何类型的指针永远是占4 个字节，至于它指向的数组占多少字节，不知道，具体要看数组大小。它是“指向数组的指针”的简称。</li></ul><p>下面到底哪个是数组指针，哪个是指针数组呢：<br>A)<br>int <em>p1[10];<br>B)<br>int (</em>p2)[10];<br>每次上课问这个问题，总有弄不清楚的。这里需要明白一个符号之间的优先级问题。</p><p>“[]”的优先级比“<em>”要高。p1 先与“[]”结合，构成一个数组的定义，数组名为p1，int *修饰的是数组的内容，即数组的每个元素。那现在我们清楚，这是一个数组，其包含10 个指向int 类型数据的指针，即指针数组。至于p2 就更好理解了，在这里“（）”的优先级比“[]”高，“</em>”号和p2 构成一个指针的定义，指针变量名为p2，int 修饰的是数组的内容，即数组的每个元素。数组在这里并没有名字，是个匿名数组。那现在我们清楚p2 是一个指针，它指向一个包含10 个int 类型数据的数组，即数组指针。我们可以借助下面的图加深理解：<br><img src="D:/BLOG/source/images/shuzu.jpg" alt="图示"><br><br></p><ul><li><p>eg:首先，定义一个数组[5], 将这个数组取个名字叫做a，a[5]；那么这个数组所存的变量类型是char *， 所以就有了char * a[5];—-定义一个能够存放5个指向为char的指针变量的数组。（有点拗口）。这里面的5个元素，取出任意一个都是一个char *的指针。</p><p>首先他是一个指针，定义一个指针 （<em>）， 并将这个指针取名为p（</em>p）；这个指针是指向一个存有5个char类型元素的数组的char [5], 所以 char (*p)[5]；主要这里，一定有小括号，原因是因为符号结合优先级的问题。</p></li></ul><p>说到这里，我们来看一哈二维数组a[3][5]；如果 p = a；那么可以完成2.0一样的元素访问。对于二维数组，我不知道老师是怎么给你们说的哈，在这里二维数组可以看作为多个一维数组组合成的。当然也有人说，没有多维的数组，我们在这里不讨论这个问题。 对于char a[3][5]，我们还是翻译一下：定义一个能够存放三个元素的数组a，a[3]，这三个数组的类型是一个能够存放5个char类型元素的数组char [5], char a[3][5]，也很拗口，但是慢点读，多读两遍，（如果把数组当作指针看）能否发现有那种指向指针的味道（二重指针的味道）。所以从这儿也可以看到数组指针与二维数组的相识性，和二重指针的相似性（不过还是那句话，是当作，不是就是）。<br>*首先说定义一个数组a[5]; 老师给我们说过，数组的标识符a，代表了这个数组的首地址。既然是地址，那我们开看看其与指针的关系。</p><p>int a[5] = { …}; int <em>p = a;<br>a利用数组的方式访问元素：a[1] = 5;   a[2] = a[3];     int i = a[4];<br>a利用指针的方式访问元素：</em>(a+1) = 5; <em>(a+2) = *(a+3); int i = *(a+4);<br>p利用数组的方式访问元素：p[1] = 5;   p[2] = p[3];     int i = p[4];<br>p利用指针的方式访问元素：</em>(p+1) = 5; *(p+2) = *(a+3); int i = *(p+4);<br>就上面的几个表达式可以看出，如果一个指针指向一个数组，那么这个指针变量和这个数组名可以几乎看作一个东西来使用（看作：意思你可以用一个东西去这么理解，但是你不能认为他们就是一个东西）。区别主要在于a不可以更改指向（a++：非法，p++合法）；</p>]]></content>
+    <content type="html"><![CDATA[<h1 id="关于指针"><a href="#关于指针" class="headerlink" title="关于指针"></a>关于指针</h1><ul><li>&amp;是取地址符，表示&amp;a就表示a在内存中存放的地址</li><li>*是解引符</li><li>eg： int i=3；<br><br>&emsp;&emsp;      int *p；<br>&emsp;&emsp;<br>p=&i;<br><br>这样就把i的地址放到了p中，通过解引符 *p我们就能得到存的值。比如可以printf *p 这样就得到了3.</li><li>例如swap函数，如果我们只是在函数中交换，在main函数中却没法实现交换。但如果使用指针就可以。<br><br>eg:swap(int <em>p，int *q) 然后int t；t=</em>q；这样整就行了，主函数里面用swap（&amp;i，&amp;j）这样的就实现了交换。<h2 id="数组指针和数组指针"><a href="#数组指针和数组指针" class="headerlink" title="数组指针和数组指针"></a>数组指针和数组指针</h2></li><li>指针数组：首先它是一个数组，数组的元素都是指针，数组占多少个字节由数组本身的大小决定，每一个元素都是一个指针，在32 位系统下任何类型的指针永远是占4 个字节。它是“储存指针的数组”的简称。<br>数组指针：首先它是一个指针，它指向一个数组。在32 位系统下任何类型的指针永远是占4 个字节，至于它指向的数组占多少字节，不知道，具体要看数组大小。它是“指向数组的指针”的简称。</li></ul><p>下面到底哪个是数组指针，哪个是指针数组呢：<br>A)<br>int <em>p1[10];<br>B)<br>int (</em>p2)[10];<br>每次上课问这个问题，总有弄不清楚的。这里需要明白一个符号之间的优先级问题。</p><p>“[]”的优先级比“<em>”要高。p1 先与“[]”结合，构成一个数组的定义，数组名为p1，int *修饰的是数组的内容，即数组的每个元素。那现在我们清楚，这是一个数组，其包含10 个指向int 类型数据的指针，即指针数组。至于p2 就更好理解了，在这里“（）”的优先级比“[]”高，“</em>”号和p2 构成一个指针的定义，指针变量名为p2，int 修饰的是数组的内容，即数组的每个元素。数组在这里并没有名字，是个匿名数组。那现在我们清楚p2 是一个指针，它指向一个包含10 个int 类型数据的数组，即数组指针。我们可以借助下面的图加深理解：<br><img src="images/shuzu.jpg" alt="图示"><br><br></p><ul><li><p>eg:首先，定义一个数组[5], 将这个数组取个名字叫做a，a[5]；那么这个数组所存的变量类型是char *， 所以就有了char * a[5];—-定义一个能够存放5个指向为char的指针变量的数组。（有点拗口）。这里面的5个元素，取出任意一个都是一个char *的指针。</p><p>首先他是一个指针，定义一个指针 （<em>）， 并将这个指针取名为p（</em>p）；这个指针是指向一个存有5个char类型元素的数组的char [5], 所以 char (*p)[5]；主要这里，一定有小括号，原因是因为符号结合优先级的问题。</p></li></ul><p>说到这里，我们来看一哈二维数组a[3][5]；如果 p = a；那么可以完成2.0一样的元素访问。对于二维数组，我不知道老师是怎么给你们说的哈，在这里二维数组可以看作为多个一维数组组合成的。当然也有人说，没有多维的数组，我们在这里不讨论这个问题。 对于char a[3][5]，我们还是翻译一下：定义一个能够存放三个元素的数组a，a[3]，这三个数组的类型是一个能够存放5个char类型元素的数组char [5], char a[3][5]，也很拗口，但是慢点读，多读两遍，（如果把数组当作指针看）能否发现有那种指向指针的味道（二重指针的味道）。所以从这儿也可以看到数组指针与二维数组的相识性，和二重指针的相似性（不过还是那句话，是当作，不是就是）。<br>*首先说定义一个数组a[5]; 老师给我们说过，数组的标识符a，代表了这个数组的首地址。既然是地址，那我们开看看其与指针的关系。</p><p>int a[5] = { …}; int <em>p = a;<br>a利用数组的方式访问元素：a[1] = 5;   a[2] = a[3];     int i = a[4];<br>a利用指针的方式访问元素：</em>(a+1) = 5; <em>(a+2) = *(a+3); int i = *(a+4);<br>p利用数组的方式访问元素：p[1] = 5;   p[2] = p[3];     int i = p[4];<br>p利用指针的方式访问元素：</em>(p+1) = 5; *(p+2) = *(a+3); int i = *(p+4);<br>就上面的几个表达式可以看出，如果一个指针指向一个数组，那么这个指针变量和这个数组名可以几乎看作一个东西来使用（看作：意思你可以用一个东西去这么理解，但是你不能认为他们就是一个东西）。区别主要在于a不可以更改指向（a++：非法，p++合法）；</p>]]></content>
     
     <summary type="html">
     
@@ -38,6 +62,8 @@
     </summary>
     
     
+    
+      <category term="c语言" scheme="https://mikasa1110.github.io/tags/c%E8%AF%AD%E8%A8%80/"/>
     
   </entry>
   
